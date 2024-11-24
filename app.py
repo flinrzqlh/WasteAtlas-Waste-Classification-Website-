@@ -22,7 +22,7 @@ class WasteAtlasCNN(nn.Module):
 app = Flask(__name__)
 # Configuration
 app.config['UPLOAD_FOLDER'] = 'uploads/'
-app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max file size
+app.config['MAX_CONTENT_LENGTH'] = 9 * 1024 * 1024  # 9MB max file size
 
 # Ensure the upload folder exists
 if not os.path.exists(app.config['UPLOAD_FOLDER']):
