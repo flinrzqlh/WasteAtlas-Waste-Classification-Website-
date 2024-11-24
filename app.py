@@ -168,9 +168,9 @@ def delete_file():
     file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
     if os.path.exists(file_path):
         os.remove(file_path)
-        return render_template('image.html', message=f'File {filename} deleted successfully')
+        return render_template('image.html')
     else:
-        return render_template('image.html', message=f'File {filename} not found')
+        return render_template('image.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
